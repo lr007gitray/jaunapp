@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>João Francisco Herculano</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0f1f2a;
+  color:white;
+}
+
+.topo {
+  width:100%;
+  height:300px;
+  background:url('gaia.png') center/contain no-repeat;
+  background-color:#0f1f2a;
+}
+
+.container {
+  max-width:420px;
+  margin:-60px auto 0;
+  padding:20px;
+}
+
+.card {
+  background:#1c2b36;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  margin-bottom:10px;
+}
+
+h1 {
+  margin:0;
+  font-size:22px;
+  text-align:center;
+}
+
+.divisor {
+  height:1px;
+  background:#2e4a5c;
+  margin:15px 0;
+}
+
+.lista {
+  font-size:14px;
+  line-height:1.6;
+}
+
+.btn {
+  display:block;
+  margin-top:20px;
+  padding:14px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  text-align:center;
+  font-weight:bold;
+}
+
+form input,
+form select {
+  width:100%;
+  margin:8px 0;
+  padding:10px;
+  border-radius:8px;
+  border:none;
+  box-sizing:border-box;
+}
+
+/* ===== LABELS PADRÃO ===== */
+
+form label {
+  font-size:13px;
+  display:block;
+  text-align:left;
+  margin-top:10px;
+}
+
+/* ===== MELHORIA VISUAL DA PESQUISA EXTERNA ===== */
+
+#formExterno .card {
+  background:#243847;
+  border-left:4px solid #25D366;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:10px;
+}
+
+#formExterno h3 {
+  font-size:14px;
+  margin-bottom:12px;
+  color:#fff;
+  line-height:1.5;
+  text-align:left;
+}
+
+/* ===== MARCADORES ===== */
+
+#formExterno label {
+  display:block;
+  text-align:left;
+  background:#1c2b36;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:8px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+#formExterno label:hover {
+  background:#2e4a5c;
+}
+
+#formExterno input[type="radio"],
+#formExterno input[type="checkbox"] {
+  width:auto;
+  margin-right:8px;
+  vertical-align:middle;
+}
+
+/* ===== INPUTS ===== */
+
+#formExterno input[type="text"],
+#formExterno input[type="date"],
+#formExterno input[type="time"] {
+  background:#1c2b36;
+  color:white;
+  border:1px solid #2e4a5c;
+}
+
+/* ===== BOTÕES ===== */
+
+form button {
+  margin-top:15px;
+  width:100%;
+  padding:14px;
+  background:#25D366;
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+#formExterno button {
+  background:#007BFF;
+}
+
+#formExterno button:hover {
+  background:#0056b3;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topo"></div>
+
+<div class="container">
+<div class="card">
+
+<h1>João Francisco Herculano</h1>
+
+<h1 style="font-size:18px; font-weight:normal; color:#c9d6df;">
+A serviço do <b>SENHOR</b> <br>desde 1994
+</h1>
+
+<div class="divisor"></div>
+
+<div class="lista">
+<b>ATENDIMENTO ESPIRITUAL:</b>
+
+<ul>
+<li>Estudos Bíblicos;</li>
+<li>Cultos nos Lares;</li>
+<li>Pequenos Grupos;</li>
+<li>Classes Bíblicas;</li>
+<li>Semanas de Oração / Evangelismo;</li>
+<li>Preparação para o Batismo.</li>
+</ul>
+</div>
+
+<!-- 🔵 PESQUISA INTERNA -->
+
+<div class="divisor"></div>
+
+<h2 style="text-align:center;">🔍🕵️ Pesquisa para Membresia da IASD</h2>
+
+<form id="formInterno">
+
+<input type="text"
+placeholder="Nome completo"
+pattern="[A-Za-zÀ-ÿ\s]+"
+title="Digite apenas letras"
+maxlength="80"
+required>
+
+<input type="text"
+placeholder="Endereço completo"
+pattern="[A-Za-zÀ-ÿ0-9\s,\-\.]+"
+title="Digite apenas letras e números"
+maxlength="120"
+required>
+
+<input type="text"
+placeholder="Complemento / Referência"
+pattern="[A-Za-zÀ-ÿ0-9\s,\-\.]+"
+title="Digite apenas letras e números"
+maxlength="120"
+required>
+
+<input type="tel"
+placeholder="Telefone (WhatsApp)"
+pattern="[0-9]+"
+title="Digite apenas números"
+maxlength="15"
+required>
+
+<label>01. ESTOU DANDO ESTUDOS BÍBLICOS PARA:</label>
+
+<select>
+<option>01 Pessoa</option>
+<option>02 Pessoas</option>
+<option>03 Pessoas</option>
+<option>04 Pessoas</option>
+<option>05 Pessoas</option>
+<option>Mais de Cinco</option>
+<option>Nenhuma Pessoa</option>
+</select>
+
+<label>02. ACEITO QUE ALGUÉM LIDERE UMA CLASSE BÍBLICA OU PEQUENO GRUPO EM MINHA CASA.</label>
+
+<select>
+<option>SIM</option>
+<option>NÃO</option>
+</select>
+
+<label>03. EU GOSTARIA QUE MEU FILHO/A JUVENIL FOSSE PREPARADO PARA O BATISMO.</label>
+
+<select>
+<option>SIM</option>
+<option>NÃO</option>
+</select>
+
+<label>04. TENHO PARENTES E AMIGOS AFASTADOS DA COMUNHÃO DA IGREJA PARA SEREM VISITADOS.</label>
+
+<select>
+<option>SIM</option>
+<option>NÃO</option>
+</select>
+
+<label>05. TENHO UM PEQUENO GRUPO FUNCIONANDO EM MINHA CASA.</label>
+
+<select>
+<option>SIM</option>
+<option>NÃO</option>
+</select>
+
+<label>06. MINHA META DE ALMAS:</label>
+
+<select>
+<option>01 Pessoa</option>
+<option>02 Pessoas</option>
+<option>03 Pessoas</option>
+<option>04 Pessoas</option>
+<option>05 Pessoas</option>
+<option>Mais de Cinco</option>
+<option>Nenhuma Pessoa</option>
+</select>
+
+<button type="button" onclick="enviarInterno()">
+Enviar Pesquisa
+</button>
+
+<button type="button" onclick="limparFormulario('formInterno')">
+🧹 Limpar Pesquisa
+</button>
+
+</form>
+
+<!-- 🟢 PESQUISA EXTERNA -->
+
+<div class="divisor"></div>
+
+<h2 style="text-align:center;">
+🔍🕵️ Pesquisa de <br>Opinião Religiosa <br> COMUNITÁRIA
+</h2>
+
+<form id="formExterno">
+
+<div class="card">
+<h3>01. NA SUA OPINIÃO, DEUS EXISTE???</h3>
+
+<label><input type="radio" name="q1" value="SIM"> SIM</label>
+
+<label><input type="radio" name="q1" value="NÃO"> NÃO</label>
+</div>
+
+<div class="card">
+<h3>02. COMO VOCÊ VÊ A SITUAÇÃO DO MUNDO ATUAL???</h3>
+
+<label><input type="radio" name="q2" value="MELHOR QUE NO PASSADO"> MELHOR QUE NO PASSADO</label>
+
+<label><input type="radio" name="q2" value="PIORANDO A CADA DIA"> PIORANDO A CADA DIA</label>
+</div>
+
+<div class="card">
+<h3>03. POR QUE O MUNDO ESTÁ NESTA SITUAÇÃO???</h3>
+
+<label><input type="checkbox" name="q3" value="FALTA DE EMPREGO"> FALTA DE EMPREGO</label>
+
+<label><input type="checkbox" name="q3" value="FALTA DE RELIGIÃO"> FALTA DE RELIGIÃO</label>
+
+<label><input type="checkbox" name="q3" value="FALTA DE AMOR"> FALTA DE AMOR</label>
+
+<label><input type="checkbox" name="q3" value="CUMPRIMENTO DE PROFECIA"> CUMPRIMENTO DE PROFECIA</label>
+</div>
+
+<div class="card">
+<h3>04. COM QUE FREQUÊNCIA VOCÊ VAI À IGREJA???</h3>
+
+<label><input type="radio" name="q4" value="SEMANALMENTE"> SEMANALMENTE</label>
+
+<label><input type="radio" name="q4" value="MENSALMENTE"> MENSALMENTE</label>
+
+<label><input type="radio" name="q4" value="RARAMENTE"> RARAMENTE</label>
+
+<label><input type="radio" name="q4" value="NUNCA"> NUNCA</label>
+</div>
+
+<div class="card">
+<h3>05. QUAL IGREJA VOCÊ FREQUENTA ATUALMENTE???</h3>
+
+<input type="text"
+id="q5"
+pattern="[A-Za-zÀ-ÿ0-9\s,\-\.]+"
+title="Digite apenas letras e números"
+maxlength="80">
+</div>
+
+<div class="card">
+<h3>06. DE ACORDO COM SUA COMPREENSÃO QUEM É JESUS???</h3>
+
+<label><input type="radio" name="q6" value="FILHO DE DEUS"> FILHO DE DEUS</label>
+
+<label><input type="radio" name="q6" value="SALVADOR"> SALVADOR</label>
+
+<label><input type="radio" name="q6" value="CRIADOR"> CRIADOR</label>
+
+<label><input type="radio" name="q6" value="OUTRA OPINIÃO"> OUTRA OPINIÃO</label>
+
+<label><input type="radio" name="q6" value="NÃO SABE"> NÃO SABE</label>
+</div>
+
+<div class="card">
+<h3>07. VOCÊ CRÊ QUE JESUS VIRÁ OUTRA VEZ???</h3>
+
+<label><input type="radio" name="q7" value="SIM"> SIM</label>
+
+<label><input type="radio" name="q7" value="NÃO"> NÃO</label>
+
+<label><input type="radio" name="q7" value="TENHO DÚVIDAS"> TENHO DÚVIDAS</label>
+</div>
+
+<div class="card">
+<h3>08. O QUE VOCÊ ACHA QUE PODE SER FEITO PARA ATRAIR A ATENÇÃO DOS JOVENS PARA AS COISAS ESPIRITUAIS???</h3>
+
+<input type="text"
+id="q8"
+pattern="[A-Za-zÀ-ÿ0-9\s,\-\.\,]+"
+title="Digite apenas letras e números"
+maxlength="150">
+</div>
+
+<div class="card">
+<h3>09. VOCÊ ACHA QUE EXISTE VIDA APÓS A MORTE???</h3>
+
+<label><input type="radio" name="q9" value="SIM"> SIM</label>
+
+<label><input type="radio" name="q9" value="NÃO"> NÃO</label>
+
+<label><input type="radio" name="q9" value="NÃO SEI DIZER"> NÃO SEI DIZER</label>
+</div>
+
+<div class="card">
+<h3>10. VOCÊ TEM UMA BÍBLIA EM SUA CASA???</h3>
+
+<label><input type="radio" name="q10" value="SIM"> SIM</label>
+
+<label><input type="radio" name="q10" value="NÃO"> NÃO</label>
+</div>
+
+<div class="card">
+<h3>11. VOCÊ ACREDITA QUE A BÍBLIA É A PALAVRA DE DEUS???</h3>
+
+<label><input type="radio" name="q11" value="SIM"> SIM</label>
+
+<label><input type="radio" name="q11" value="NÃO"> NÃO</label>
+</div>
+
+<div class="card">
+<h3>12. VOCÊ ACHA QUE ENTENDE A BÍBLIA TÃO BEM COMO GOSTARIA DE ENTENDÊ-LA???</h3>
+
+<label><input type="radio" name="q12" value="SIM, COMPREENDO MUITO BEM"> SIM, COMPREENDO MUITO BEM</label>
+
+<label><input type="radio" name="q12" value="ENTENDO MAIS OU MENOS"> ENTENDO MAIS OU MENOS</label>
+
+<label><input type="radio" name="q12" value="NÃO ENTENDO NADA"> NÃO ENTENDO NADA</label>
+</div>
+
+<div class="card">
+<h3>13. DE 01 A 05, QUAL É SEU NÍVEL DE INTERESSE NAS COISAS DE DEUS???</h3>
+
+<input type="text"
+id="q13"
+pattern="[0-5]+"
+title="Digite apenas números de 0 a 5"
+maxlength="1">
+</div>
+
+<div class="card">
+<h3>14. SE VOCÊ TIVESSE OPORTUNIDADE GOSTARIA DE ESTUDAR COM MAIS PROFUNDIDADE A PALAVRA DE DEUS???</h3>
+
+<label><input type="radio" name="q14" value="SIM, GOSTARIA MUITO"> SIM, GOSTARIA MUITO</label>
+
+<label><input type="radio" name="q14" value="AGORA NÃO, TALVEZ NUM OUTRO MOMENTO"> AGORA NÃO, TALVEZ NUM OUTRO MOMENTO</label>
+
+<label><input type="radio" name="q14" value="NÃO ME INTERESSO"> NÃO ME INTERESSO</label>
+</div>
+
+<div class="card">
+<h3>17. QUAL O MELHOR DIA DA SEMANA PARA VOCÊ FAZER SEUS ESTUDOS???</h3>
+
+<input type="text"
+id="dia"
+pattern="[A-Za-zÀ-ÿ\s]+"
+title="Digite apenas letras"
+maxlength="30">
+</div>
+
+<div class="card">
+<h3>18. QUAL O MELHOR HORÁRIO PARA VOCÊ FAZER SEUS ESTUDOS???</h3>
+
+<input type="time" id="horario">
+</div>
+
+<div class="card">
+<h3>DADOS PESSOAIS</h3>
+
+<input type="text"
+id="nomeExt"
+placeholder="SEU NOME COMPLETO"
+pattern="[A-Za-zÀ-ÿ\s]+"
+title="Digite apenas letras"
+maxlength="80">
+
+<input type="date" id="nascimento">
+
+<input type="text"
+id="telefoneExt"
+placeholder="TELEFONE (WHATSAPP)"
+pattern="[0-9]+"
+title="Digite apenas números"
+maxlength="15">
+
+<input type="text"
+id="enderecoExt"
+placeholder="ENDEREÇO COMPLETO"
+pattern="[A-Za-zÀ-ÿ0-9\s,\-\.]+"
+title="Digite apenas letras e números"
+maxlength="120">
+</div>
+
+<button type="button" onclick="enviarExterno()">
+ENVIAR RESPOSTAS
+</button>
+
+<button type="button" onclick="limparFormulario('formExterno')">
+🧹 Limpar Pesquisa
+</button>
+
+</form>
+
+<a class="btn" href="https://wa.me/SEUNUMERO">
+Falar no WhatsApp
+</a>
+
+</div>
+</div>
+
+<script>
+
+function contemLink(texto){
+
+  texto = texto.toLowerCase();
+
+  return texto.includes("http")
+      || texto.includes("www")
+      || texto.includes(".com")
+      || texto.includes("<script")
+      || texto.includes("</script")
+      || texto.includes("javascript:");
+}
+
+function enviarInterno(){
+
+  let campos = document.querySelectorAll("#formInterno input, #formInterno select");
+
+  for(let campo of campos){
+
+    if(contemLink(campo.value)){
+
+      alert("Links ou scripts não são permitidos.");
+
+      return;
+    }
+  }
+
+  let texto = "📋 Pesquisa Interna IASD\n\n";
+
+  campos.forEach(c => {
+    texto += (c.placeholder || c.previousElementSibling.innerText) + ": " + c.value + "\n";
+  });
+
+  window.open(
+    "https://wa.me/5511943408434?text=" + encodeURIComponent(texto)
+  );
+}
+
+function enviarExterno(){
+
+  function r(n){
+    return document.querySelector('input[name="'+n+'"]:checked')?.value || "";
+  }
+
+  function c(n){
+    return [...document.querySelectorAll('input[name="'+n+'"]:checked')]
+    .map(e => e.value)
+    .join(", ");
+  }
+
+  let camposTexto = document.querySelectorAll(
+    '#formExterno input[type="text"], #formExterno input[type="date"], #formExterno input[type="time"]'
+  );
+
+  for(let campo of camposTexto){
+
+    if(contemLink(campo.value)){
+
+      alert("Links ou scripts não são permitidos.");
+
+      return;
+    }
+  }
+
+  let texto = "📋 PESQUISA DE OPINIÃO RELIGIOSA\n\n";
+
+  texto += "01. Deus existe: " + r("q1") + "\n";
+  texto += "02. Mundo: " + r("q2") + "\n";
+  texto += "03. Motivos: " + c("q3") + "\n";
+  texto += "04. Frequência: " + r("q4") + "\n";
+  texto += "05. Igreja: " + document.getElementById("q5").value + "\n";
+  texto += "06. Jesus: " + r("q6") + "\n";
+  texto += "07. Voltará: " + r("q7") + "\n";
+  texto += "08. Jovens: " + document.getElementById("q8").value + "\n";
+  texto += "09. Vida após morte: " + r("q9") + "\n";
+  texto += "10. Tem Bíblia: " + r("q10") + "\n";
+  texto += "11. Palavra de Deus: " + r("q11") + "\n";
+  texto += "12. Entendimento: " + r("q12") + "\n";
+  texto += "13. Interesse: " + document.getElementById("q13").value + "\n";
+  texto += "14. Estudo: " + r("q14") + "\n";
+  texto += "17. Dia: " + document.getElementById("dia").value + "\n";
+  texto += "18. Horário: " + document.getElementById("horario").value + "\n\n";
+
+  texto += "Nome: " + document.getElementById("nomeExt").value + "\n";
+  texto += "Nascimento: " + document.getElementById("nascimento").value + "\n";
+  texto += "Telefone: " + document.getElementById("telefoneExt").value + "\n";
+  texto += "Endereço: " + document.getElementById("enderecoExt").value;
+
+  window.open(
+    "https://wa.me/5511943408434?text=" + encodeURIComponent(texto)
+  );
+}
+
+function limparFormulario(idFormulario){
+
+  document.getElementById(idFormulario).reset();
+
+}
+
+</script>
+
+<div style="
+text-align:center;
+margin-top:30px;
+padding:15px;
+font-size:13px;
+color:#8fa3b0;
+line-height:1.6;
+">
+
+😎 DESENVOLVIDO POR <b>RAYPROJECTS</b><br>
+📱 11 97552-1048
+
+</div>
+
+</body>
+</html>
